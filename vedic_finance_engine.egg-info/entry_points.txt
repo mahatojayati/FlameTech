@@ -1,2 +1,0 @@
-[console_scripts]
-vfce = vedic_finance_engine.cli.main:cli
