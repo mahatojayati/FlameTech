@@ -1,0 +1,18 @@
+.main-title {
+    text-align: center;
+    font-size: 42px;
+    color: #0A3D62;
+    font-weight: bold;
+}
+
+.stButton>button {
+    background-color: #0A3D62;
+    color: white;
+    border-radius: 10px;
+    height: 3em;
+    width: 100%;
+}
+
+.stNumberInput>div>div>input {
+    border-radius: 8px;
+}
