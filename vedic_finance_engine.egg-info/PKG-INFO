@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: vedic-finance-engine
+Version: 0.1.0
+Summary: Fast Interest & EMI Calculator using Nikhilam Sutra
+Author: Your Name
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26
+Requires-Dist: click>=8.0
