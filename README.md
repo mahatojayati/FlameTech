@@ -70,7 +70,7 @@ The goal is to demonstrate:
 ### EMI Formula
 
 \[
-EMI = \frac{P \cdot r (1+r)^n}{(1+r)^n - 1}
+EMI = [ P × r × (1 + r)^n ] / [ (1 + r)^n − 1 ]
 \]
 
 Where:
@@ -83,7 +83,7 @@ Where:
 ### Simple Interest
 
 \[
-SI = \frac{P \cdot R \cdot T}{100}
+SI = ( P × R × T ) / 100
 \]
 
 ---
@@ -91,7 +91,7 @@ SI = \frac{P \cdot R \cdot T}{100}
 ### Compound Interest
 
 \[
-CI = P \left(1 + \frac{R}{100n} \right)^{nT} - P
+CI = P × ( 1 + R / (100 × n) )^(n × T) − P
 \]
 
 ---
