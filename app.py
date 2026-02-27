@@ -2,6 +2,13 @@ import streamlit as st
 from vedic_engine.interest import simple_interest, compound_interest
 from vedic_engine.emi import calculate_emi
 
+from vedic_engine.charts import (
+    generate_amortization_schedule,
+    plot_area_chart,
+    plot_pie_chart
+)
+
+
 st.set_page_config(
     page_title="Vedic Financial Compute Engine",
     layout="wide",
