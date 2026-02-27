@@ -1,13 +1,24 @@
 import math
 
-def calculate_emi(principal: float, annual_rate: float, tenure_years: float):
-    monthly_rate = annual_rate / (12 * 100)
-    months = tenure_years * 12
+if st.button("Calculate EMI"):
+    emi, interest, total = calculate_emi(principal, rate, tenure)
 
-    emi = (principal * monthly_rate * (1 + monthly_rate) ** months) / \
-          ((1 + monthly_rate) ** months - 1)
+    st.success(f"Monthly EMI: ₹ {emi:,.2f}")
+    st.info(f"Total Interest: ₹ {interest:,.2f}")
+    st.warning(f"Total Payment: ₹ {total:,.2f}")
 
-    total_payment = emi * months
-    total_interest = total_payment - principal
+    # Generate Schedule
+    df = generate_amortization_schedule(principal, rate, tenure)
 
-    return emi, total_interest, total_payment
+    st.subheader("Amortization Schedule")
+    st.dataframe(df)
+
+    # Area Chart
+    st.subheader("Long-Term EMI Cash Flow (Area Chart)")
+    area_plot = plot_area_chart(df)
+    st.pyplot(area_plot)
+
+    # Pie Chart
+    st.subheader("Principal vs Interest Breakdown")
+    pie_plot = plot_pie_chart(principal, interest)
+    st.pyplot(pie_plot)
